@@ -279,19 +279,6 @@ public class BuscaMinas {
     }
 
     /**
-     * Revela la posición de las minas en el mapa.
-     */
-    public void revelarMapa(){
-        for (int i = 0; i < mapa.length; i++) {
-            for (int j = 0; j < mapa[i].length; j++) {
-                if (mapa[i][j] == '*'){
-                    mapaBlanco[i][j] = '*';
-                }
-            }
-        }
-    }
-
-    /**
      * Verifica si colocar banderas marca correctamente todas las minas.
      * @return Verdadero si todas las minas están correctamente marcadas con banderas, falso en caso contrario.
      */
